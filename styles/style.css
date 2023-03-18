@@ -1,0 +1,68 @@
+/* Estilos de la pagina web*/
+
+/* Barra de navegacion */
+.nav {
+  background: gray;
+  box-sizing: border-box;
+  height: 60px;
+  line-height: 20px;
+  padding: 20px;
+}
+
+/* Links a paginas */
+a {
+  color: white;
+  font-family: sans-serif, serif, monospace;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Posicion en la barra de navegacion */
+.nav a {
+  display: inline;
+  float: right;
+}
+
+/* Formato del cuerpo de la pagina */
+body {
+  color: gray;
+  font-family: sans-serif, serif, monospace;
+  overflow-y: overlay;
+}
+
+/* Formato del titulo principal */
+h1 {
+  text-align: center;
+}
+
+/* Formato del grafico */
+#principal_chart {
+  display: block;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Formato del texto */
+.text {
+  padding: 32px;
+  text-align: center;
+}
+
+/* Formato del formulario */
+.formulario {
+  text-align: center;
+}
+
+/* Formato flechas del carrucel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(240deg)
+    brightness(100%) contrast(101%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
