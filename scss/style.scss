@@ -1,0 +1,141 @@
+// Definición del mapa de colores
+$colors: (
+  "nav": gray,
+  "text": gray,
+  "link": white
+);
+
+// Barra de navegación
+.nav {
+  background: map-get($colors, "nav");
+  box-sizing: border-box;
+  height: 60px;
+  line-height: 20px;
+  padding: 20px;
+}
+
+// Links a páginas
+.nav a {
+  color: map-get($colors, "link");
+  font-family: sans-serif, serif, monospace;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline;
+  float: right;
+}
+
+// Formato del cuerpo de la página
+body {
+  color: map-get($colors, "text");
+  font-family: sans-serif, serif, monospace;
+  overflow-y: overlay;
+}
+
+// Formato del título principal
+h1 {
+  text-align: center;
+}
+
+// Formato gráficos
+.container {
+  margin-top: 50px;
+}
+
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .col-md-6 {
+  padding: 15px;
+}
+
+.container .col-md-6 .grafico {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container .col-md-6 .texto-grafico {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.grafico--izquierdo {
+  margin-right: 10px;
+}
+
+.grafico--derecho {
+  margin-left: 10px;
+}
+
+.texto-grafico--izquierdo {
+  order: 1;
+}
+
+.texto-grafico--derecho {
+  order: 2;
+}
+
+// Formato del texto
+.text {
+  padding: 32px;
+  text-align: center;
+}
+
+// Formato del formulario
+.formulario {
+  text-align: center;
+}
+
+// Formato flechas del carrusel
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(240deg) brightness(100%) contrast(101%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+// Estilo de las imágenes animadas
+.animated-image {
+  transition: all 0.5s ease-out;
+}
+
+.animated-image:hover {
+  transform: scale(1.1);
+}
+
+// Formato del footer
+footer {
+  color: map-get($colors, "text");
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+// Estilo de los enlaces en el footer
+footer a {
+  color: map-get($colors, "link") !important;
+}
+
+// Separación de divs
+div {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+// Agregar margen superior al primer div
+div:first-of-type {
+  margin-top: 40px;
+}
+
+// Agregar margen inferior al último div
+div:last-of-type {
+  margin-bottom: 40px;
+}
