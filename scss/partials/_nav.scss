@@ -1,0 +1,31 @@
+// Mixin para estilos de texto
+@mixin texto {
+    font-family: sans-serif, serif, monospace;
+    }
+
+
+// Definición del mapa de colores
+$colors: (
+    "nav": gray,
+    "text": gray,
+    "link": white
+);
+// Barra de navegación
+.nav {
+    background: map-get($colors, "nav");
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+// Links a páginas
+.nav a {
+    color: map-get($colors, "link");
+    font-family: sans-serif, serif, monospace;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+    float: right;
+    @include texto;
+}

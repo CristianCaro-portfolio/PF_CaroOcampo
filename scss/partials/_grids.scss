@@ -1,0 +1,53 @@
+// Mixin para estilos de texto
+@mixin texto {
+    font-family: sans-serif, serif, monospace;
+}
+
+// container
+.container {
+    margin-top: 50px;
+
+    .row {
+        flex-wrap: wrap;
+
+        .col-md-6 {
+            display: block;
+            padding: 2px;
+
+            .grafico {
+                display: block;
+                max-width: 100%;
+                height: auto;
+
+                &--izquierdo {
+                    margin-right: 2px;
+                }
+
+                &--derecho {
+                    margin-left: 2px;
+                }
+            }
+
+            .texto-grafico {
+                font-size: 16px;
+                margin-top: 5px;
+
+                &--izquierdo {
+                    order: 1;
+                }
+
+                &--derecho {
+                    order: 2;
+                }
+
+                @include texto;
+            }
+        }
+    }
+}
+
+// Formato del texto
+.text {
+    padding: 32px;
+    text-align: center;
+}

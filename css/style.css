@@ -11,49 +11,43 @@
   margin-left: 5px;
   margin-right: 5px;
   display: inline;
-  float: right; }
-
-body {
-  color: gray;
-  font-family: sans-serif, serif, monospace;
-  overflow-y: overlay; }
-
-h1 {
-  text-align: center; }
+  float: right;
+  font-family: sans-serif, serif, monospace; }
 
 .container {
   margin-top: 50px; }
-
-.container .row {
-  display: flex;
-  flex-wrap: wrap; }
-
-.container .col-md-6 {
-  padding: 15px; }
-
-.container .col-md-6 .grafico {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-.container .col-md-6 .texto-grafico {
-  font-size: 16px;
-  margin-top: 10px; }
-
-.grafico--izquierdo {
-  margin-right: 10px; }
-
-.grafico--derecho {
-  margin-left: 10px; }
-
-.texto-grafico--izquierdo {
-  order: 1; }
-
-.texto-grafico--derecho {
-  order: 2; }
+  .container .row {
+    flex-wrap: wrap; }
+    .container .row .col-md-6 {
+      display: block;
+      padding: 2px; }
+      .container .row .col-md-6 .grafico {
+        display: block;
+        max-width: 100%;
+        height: auto; }
+        .container .row .col-md-6 .grafico--izquierdo {
+          margin-right: 2px; }
+        .container .row .col-md-6 .grafico--derecho {
+          margin-left: 2px; }
+      .container .row .col-md-6 .texto-grafico {
+        font-size: 16px;
+        margin-top: 5px;
+        font-family: sans-serif, serif, monospace; }
+        .container .row .col-md-6 .texto-grafico--izquierdo {
+          order: 1; }
+        .container .row .col-md-6 .texto-grafico--derecho {
+          order: 2; }
 
 .text {
   padding: 32px;
+  text-align: center; }
+
+body {
+  color: gray;
+  overflow-y: overlay;
+  font-family: sans-serif, serif, monospace; }
+
+h1 {
   text-align: center; }
 
 .formulario {
@@ -67,30 +61,15 @@ h1 {
 .carousel-control-next {
   width: 5%; }
 
-.animated-image {
-  transition: all 0.5s ease-out; }
-
-.animated-image:hover {
-  transform: scale(1.1); }
-
 footer {
   color: gray;
-  position: fixed;
   bottom: 0;
   width: 100%; }
 
 footer a {
-  color: white !important; }
+  color: white; }
 
 div {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box; }
-
-div:first-of-type {
-  margin-top: 40px; }
-
-div:last-of-type {
-  margin-bottom: 40px; }
